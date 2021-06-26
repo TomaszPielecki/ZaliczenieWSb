@@ -1,6 +1,6 @@
 package pl.gda.wsbZaliczenie;
 
-public abstract class Vehicle {
+public abstract class Vehicle implements InterfaceClass{
     protected String registrationNumber;
     protected String vinNumber;
     protected String color;
@@ -21,5 +21,13 @@ public abstract class Vehicle {
         this.tankCondition = tankCondition;
         this.odometer = odometer;
         this.tankCapacity = tankCapacity;
+
+
+    }
+    public void drive () {
+        System.out.println("Drive");
+    }
+    public void refuel () {
+        System.out.println("Refuel");
     }
 }
