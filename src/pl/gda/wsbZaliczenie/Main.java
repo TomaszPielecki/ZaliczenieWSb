@@ -33,5 +33,10 @@ public class Main {
         car1.refuel(140);
         System.out.println("Pojazd o nr. rejestracyjnym "+car1.registrationNumber+" ma pełny Back: "+car1.tankCondition+" l paliwa");
 
+        System.out.println("-----------Zadanie 11 Zmaiana koloru samochodu-----------");
+        System.out.println("kolor: "+car1.color+" cena: "+car1.price);
+        car1.changeColor("Red");
+        System.out.println("kolor: "+car1.color+" cena: "+car1.price);
+
     }
 }

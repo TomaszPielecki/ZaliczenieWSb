@@ -53,4 +53,8 @@ public abstract class Vehicle implements InterfaceClass {
             System.out.println("It was fully refueled - it couldn't be any more");
         }
     }
+    public void changeColor(String newColor){
+        this.color = newColor;
+        this.price = price+(price*0.05);
+    }
 }
