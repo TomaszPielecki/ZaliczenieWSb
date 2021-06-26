@@ -45,4 +45,12 @@ public abstract class Vehicle implements InterfaceClass {
             System.out.println("The vehicle will not be able to drive that many km without refueling");
         }
     }
+    public void refuel ( double amountToFuel){
+        if (this.tankCapacity >= (this.tankCondition + amountToFuel)) {
+            this.tankCondition += amountToFuel;
+        } else {
+            this.tankCondition = this.tankCapacity;
+            System.out.println("It was fully refueled - it couldn't be any more");
+        }
+    }
 }

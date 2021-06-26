@@ -24,5 +24,14 @@ public class Main {
         car1.drive(100);
         System.out.println("Pojazd o nr. rejestracyjnym "+car1.registrationNumber+" ma przebieg: "+car1.odometer+" km oraz "+car1.tankCondition+" l paliwa");
 
+        System.out.println("-----------Zadanie 9 Modyfikacja tankuj-----------");
+        System.out.println("Pojazd o nr. rejestracyjnym "+car1.registrationNumber+" ma jeszcze: "+car1.tankCondition+" l paliwa");
+        car1.refuel(20);
+        System.out.println("Pojazd o nr. rejestracyjnym "+car1.registrationNumber+" ma jeszcze: "+car1.tankCondition+" l paliwa");
+
+        System.out.println("-----------Zadanie 10 modyfikacja tankuj do pełna-----------");
+        car1.refuel(140);
+        System.out.println("Pojazd o nr. rejestracyjnym "+car1.registrationNumber+" ma pełny Back: "+car1.tankCondition+" l paliwa");
+
     }
 }
