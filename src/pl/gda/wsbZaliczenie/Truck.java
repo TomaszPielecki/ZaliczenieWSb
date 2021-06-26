@@ -8,14 +8,4 @@ public class Truck extends Vehicle implements InterfaceClass{
         this.capacity = capacity;
 
     }
-
-    @Override
-    public void drive() {
-
-    }
-
-    @Override
-    public void refuel() {
-
-    }
 }

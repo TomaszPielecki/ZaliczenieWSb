@@ -15,5 +15,9 @@ public class Main {
         System.out.println("-----------Zadanie 6 Jedz i tankuj-----------");
         car1.drive();
         car1.refuel();
+
+        System.out.println("-----------Zadanie 7 ile mozna jeszcze przejechac KM-----------");
+        System.out.println("Pojazd o nr. rejestracyjnym "+car1.registrationNumber+" może przejechać jeszcze: "+car1.range()+" km.");
+
     }
 }

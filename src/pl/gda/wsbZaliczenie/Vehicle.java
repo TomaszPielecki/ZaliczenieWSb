@@ -30,4 +30,7 @@ public abstract class Vehicle implements InterfaceClass{
     public void refuel () {
         System.out.println("Refuel");
     }
+    public double range() {
+        return (this.tankCondition / this.fuelConsumption) * 100;
+    }
 }
