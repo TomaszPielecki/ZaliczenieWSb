@@ -9,7 +9,6 @@ public class Truck extends Vehicle implements InterfaceClass{
 
     }
 
-    @Override
     public String toString() {
         return
                 capacity + ", Plates= " + registrationNumber+

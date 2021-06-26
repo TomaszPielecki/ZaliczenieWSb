@@ -8,7 +8,6 @@ class Car extends Vehicle implements InterfaceClass{
         this.numberOfDoors = numberOfDoors;
     }
 
-    @Override
     public String toString() {
         return
                 "Plate='" + registrationNumber+
