@@ -1,6 +1,6 @@
 package pl.gda.wsbZaliczenie;
 
-public abstract class Vehicle implements InterfaceClass{
+public abstract class Vehicle implements InterfaceClass {
     protected String registrationNumber;
     protected String vinNumber;
     protected String color;
@@ -24,13 +24,25 @@ public abstract class Vehicle implements InterfaceClass{
 
 
     }
-    public void drive () {
+
+    public void drive() {
         System.out.println("Drive");
     }
-    public void refuel () {
+
+    public void refuel() {
         System.out.println("Refuel");
     }
+
     public double range() {
         return (this.tankCondition / this.fuelConsumption) * 100;
+    }
+
+    public void drive(double kilometersToGo) {
+        if (kilometersToGo < this.range()) {
+            this.odometer = this.odometer + kilometersToGo;
+            this.tankCondition = this.tankCondition - (this.fuelConsumption * (kilometersToGo / 100));
+        } else {
+            System.out.println("The vehicle will not be able to drive that many km without refueling");
+        }
     }
 }

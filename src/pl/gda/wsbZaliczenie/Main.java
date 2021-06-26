@@ -19,5 +19,10 @@ public class Main {
         System.out.println("-----------Zadanie 7 ile mozna jeszcze przejechac KM-----------");
         System.out.println("Pojazd o nr. rejestracyjnym "+car1.registrationNumber+" może przejechać jeszcze: "+car1.range()+" km.");
 
+        System.out.println("-----------Zadanie 8 Zmodyfikowanie jedz-----------");
+        System.out.println("Pojazd o nr. rejestracyjnym "+car1.registrationNumber+" ma przebieg: "+car1.odometer+" km oraz "+car1.tankCondition+" l paliwa (7,5 litra na 100 km spala)");
+        car1.drive(100);
+        System.out.println("Pojazd o nr. rejestracyjnym "+car1.registrationNumber+" ma przebieg: "+car1.odometer+" km oraz "+car1.tankCondition+" l paliwa");
+
     }
 }
