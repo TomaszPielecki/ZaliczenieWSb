@@ -9,8 +9,8 @@ public class Main {
         Truck truck1 = new Truck("WWE 48722","V5H935377348", "Silver", 90000,35,1000,1400000,2000,4000);
         Truck truck2 = new Truck("WWE 66321","WH1UW9839238","Yellow",450000,24,1200,540000,1500,8000);
 
-        Motorcycle motorcycle1 = new Motorcycle("GLS 30234","KD0234109WW3", "Black",14000,6,24,44000,40);
-        Motorcycle motorcycle2 = new Motorcycle("GKW 333233","FJ95679J493","Yellow",55000,3,35,56700,50);
+        Motorcycle motorcycle1 = new Motorcycle("GLS 30234","KD0234109WW3", "Black",14000,6,24,400,4000);
+        Motorcycle motorcycle2 = new Motorcycle("GKW 333233","FJ95679J493","Yellow",55000,3,35,500,5000);
 
         System.out.println("-----------Zadanie 6 Jedz i tankuj-----------");
         car1.drive();
@@ -37,6 +37,15 @@ public class Main {
         System.out.println("kolor: "+car1.color+" cena: "+car1.price);
         car1.changeColor("Red");
         System.out.println("kolor: "+car1.color+" cena: "+car1.price);
+
+        System.out.println("-----------Zadanie 12 wypisanie pojazdów-----------");
+
+        System.out.println("Opis samochodu nr 1. "+car1);
+        System.out.println("Opis samochodu nr 2. "+car2);
+        System.out.println("Opis ciężarówki nr 1."+truck1);
+        System.out.println("Opis ciężarowki nr 2."+truck2);
+        System.out.println("Opis Motocykla nr 1."+motorcycle1);
+        System.out.println("Opis motocykla nr 2"+motorcycle2);
 
     }
 }

@@ -8,4 +8,17 @@ public class Truck extends Vehicle implements InterfaceClass{
         this.capacity = capacity;
 
     }
+
+    @Override
+    public String toString() {
+        return
+                capacity + ", Plates= " + registrationNumber+
+                ", Vin= " + vinNumber+
+                ", color= " + color+
+                ", price= "+ price+
+                ", fuelConsumption= "+ fuelConsumption+
+                ", tankCondition= " + tankCondition +
+                ", tankCapacity= " + tankCapacity +
+                ", odometer= " + odometer;
+    }
 }

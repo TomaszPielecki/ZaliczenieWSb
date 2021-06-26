@@ -7,4 +7,18 @@ class Car extends Vehicle implements InterfaceClass{
         super(registrationNumber, vinNumber, color, price, fuelConsumption, tankCondition, odometer,tankCapacity);
         this.numberOfDoors = numberOfDoors;
     }
+
+    @Override
+    public String toString() {
+        return
+                "Plate='" + registrationNumber+
+                ", Vin='" + vinNumber+
+                ", color='" + color+
+                ", price=" + price+
+                ", fuelConsumption=" + fuelConsumption +
+                ", tankCondition=" + tankCondition +
+                ", tankCapacity=" + tankCapacity +
+                ", odometer=" + odometer +
+                '}';
+    }
 }
